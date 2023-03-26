@@ -9,7 +9,7 @@
   </head>
   
   <body>
-    <form>
+    <form onsubmit="status()">
       <fieldset>
         <legend><h2>Billing Information</h2></legend>
         <label for="name">Name on Card</label>
@@ -31,7 +31,7 @@
         <input type="text" id="zip" name="zip" required />
         <input
           type="submit"
-          onsubmit="status()"
+          
           id="pay"
           name="pay"
           value="Pay Now"
