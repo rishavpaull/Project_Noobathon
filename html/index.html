@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-shop</title>
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer">
+    <link rel="stylesheet" href="../css/front.css">
+    <link rel="stylesheet" href="../css/nav.css">
+
+    <style>
+        .foot{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <nav>
+        <nav >
             <div class="logo">
-                <img class="logo-img" src="../logo/logo.png" alt="logo">
+                <img class="logo-img" src="../logo/logo.png"  alt="logo" style="height: 50px;">
             </div>
 
 
@@ -34,7 +43,7 @@
                     <a href="">My-orders</a>
                 </li>
                 <li>
-                    <a href="cart.html">Cart</a>
+                    <a href="">Cart</a>
                 </li>
             </ul>
         </nav>
@@ -80,7 +89,7 @@
                 </div>
             </div>
         </div>
-
+        
 
 
         <!-- partial:index.partial.html -->
@@ -97,7 +106,7 @@
             <div class="mySlides fade">
                 <img src="../images/SlideShowFurniture.jpg" style="width:100%">
             </div>
-            
+
             <div class="mySlides fade">
                 <img src="../images/SlideShow_mobiles.jpg" style="width:100%">
             </div>
@@ -120,11 +129,142 @@
         </div>
         <br />
 
-        <!-- partial -->
-        <script
+        <div class="container1">
+
+        </div>
+
+   <div class="foot">
+        
+</div>
+
+          
+           
+               <section style="background-color: #98bdbf;">
+                 <div class="container reveal">
+             
+                   <div class="text-container">
+                     <div class="text-box">
+                       <h3>50% OFF on Deal</h3>
+                       <img src="../images/s1.jpg" alt="">
+                     </div>
+                     <div class="text-box">
+                       <h3>watches</h3>
+                      <img src="../images/s2.jpg" alt="">
+                      <img src="../images/s5.jpg" alt="">
+                     </div>
+                     <div class="text-box">
+                       <h3>Multiple Bags </h3>
+                       <img src="../images/s3.jpg" alt="">
+                       <img src="../images/s4.jpg" alt="">
+                     </div>
+                   </div>
+                 </div>
+               </section>
+               
+               <section style="background-color: #4e4e4e;">
+                <img src="../images/banner.jpg" alt="">
+               </section>
+
+               <section class="cont3">
+                 <div >
+                   <h2>Thanx !</h2>
+                   <div class="text-container">
+                     <div class="contdiv3">
+             
+                       <pre>
+                         <p>
+                            <h3> Get to Know Us</h3>
+                             About Us
+                             Careers
+                             Press Releases
+                             Amazon Science
+                             
+                         </p>
+                       </pre>
+                     </div>
+                     <div class="text-box">
+                    <img src="../images/banner3.jpg" alt="" style="height: 360px;">
+                     </div>
+                     <div class="contdiv3">
+                       
+                         <pre>
+                           <p>
+                                  
+                         <h3> Let Us Help You </h3>
+                          Your Account
+                          Returns Centre
+                          100% Purchase Protection
+                          Help
+                               
+                           </p>
+                         </pre>
+                       </div>
+                   </div>
+                 </div>
+               </section>
+               
+               <footer class="footer">
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social-icon">
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+                </ul>
+
+            </footer>
+  
+             
+            <script>
+                function reveal() {
+              var reveals = document.querySelectorAll(".reveal");
+            
+              for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+            
+                if (elementTop < windowHeight - elementVisible) {
+                  reveals[i].classList.add("active");
+                } else {
+                  reveals[i].classList.remove("active");
+                }
+              }
+            }
+            
+            window.addEventListener("scroll", reveal);
+            
+               </script>   
+
+            <!-- partial -->
+            <script
             src='https://rawcdn.githack.com/KKUPGRADER/blogger/be611fb3af8a03353bf2ca2f33895a46b3bd9584/slideshow.js'>
         </script>
-        <script src="../js/index.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script src="../js/index.js"></script>
+
 
 
 
